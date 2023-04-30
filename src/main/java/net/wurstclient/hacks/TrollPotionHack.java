@@ -38,7 +38,7 @@ public final class TrollPotionHack extends Hack
 	public void onEnable()
 	{
 		// check gamemode
-		if(!MC.player.getAbilities().creativeMode)
+		if(!MC.player.getAbilities().survivalMode)
 		{
 			ChatUtils.error("Creative mode only.");
 			setEnabled(false);
