@@ -44,9 +44,6 @@ public final class GiveCmd extends Command
 		if(args.length < 1)
 			throw new CmdSyntaxError();
 		
-		if(!MC.player.getAbilities().creativeMode)
-			throw new CmdError("Creative mode only.");
-		
 		// id/name
 		Item item = getItem(args[0]);
 		
