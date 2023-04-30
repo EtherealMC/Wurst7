@@ -33,9 +33,6 @@ public final class CopyItemCmd extends Command
 		if(args.length != 2)
 			throw new CmdSyntaxError();
 		
-		if(!MC.player.getAbilities().creativeMode)
-			throw new CmdError("Creative mode only.");
-		
 		AbstractClientPlayerEntity player = getPlayer(args[0]);
 		ItemStack item = getItem(player, args[1]);
 		giveItem(item);
