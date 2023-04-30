@@ -28,8 +28,6 @@ public final class EnchantCmd extends Command
 	@Override
 	public void call(String[] args) throws CmdException
 	{
-		if(!MC.player.getAbilities().creativeMode)
-			throw new CmdError("Creative mode only.");
 		
 		if(args.length > 1)
 			throw new CmdSyntaxError();
